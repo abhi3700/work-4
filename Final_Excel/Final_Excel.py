@@ -72,15 +72,15 @@ def main():
 
     if (df1_column_headers == df_default_subcategory) : 
         print("Equal sub-categories in both the sheets!")     # check if both sheets contain the same sub-categories.
-        # Fetch list of df1_index0_asint
-        # Fetch list of df_default_value
-        # Loop in a row of df1
+        # Loop in 'df1' and compare values with default value list
         for i in range(len_index):               # i= [0, 1, 2,...., 293]
             for j in range(len_subcategory):    # j= [0, 1, 2,...., 18]
                 if df1.iloc[i,j] != df_default_value[j]:
-                    df1.iloc[i,j] = df_default_value[j]
-                elif df1.iloc[i,j] == 0:
-                    df1.iloc[i,j] = 0
+                    if df1.iloc[i,j] == 0:
+                        df1.iloc[i,j] = 0
+                    else:
+                        df1.iloc[i,j] = df_default_value[j]
+                
 
     else:
         print("Sorry! Please correct your sub-categories.")
