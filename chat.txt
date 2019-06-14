@@ -1,0 +1,22 @@
+Hi Abhijit,
+
+I am trying to learn Python but not making progress I hoped actually totally new in programming. I have been asked to automate an audit where data needs to be audited against default values and display only the discrepancies in a new file whereas correct values needs to left blank. I am not sure how to do so I asked a colleague and he said use openpxyl lib but I don't even know what that means. Please take a look at the sample file, first tab is the data that needs to be audited against the default values in next tab. Please let me know if this is something you can assist me with and how much it would cost.
+ 06122019.xlsx
+(36KB)
+
+This message relates to:
+I will automate excel using python
+a
+Me
+Jun 13, 8:11 AM
+I am seeing 3 types of items
+- Veg
+- Fruit
+- hybrid
+
+So, what is to be done?
+G
+gc199m
+Jun 13, 8:23 AM
+ReportSpam
+Under three categories, there are subcategories, like Apple, Cherry, Onion, etc and all these sub-categories needs to be audited against their default values. When values are same don't change, if discrepancies found then replace with the default value for that subcategory and if blank then leave it blank.
